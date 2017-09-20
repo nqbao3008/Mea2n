@@ -1,0 +1,23 @@
+<html>
+<header>
+    <title>Login User</title>
+</header>
+
+<body>
+
+    <form action="/login" method="POST">
+        <p>Email: <input type="text" name="email" /></p>
+        <p>Name: <input type="text" name="name" /></p>
+        <p>Passwd:<input type="password" name="password" /></p>
+        <input type="submit" name="login" />
+    </form>
+    
+
+    <p style="color: red;">
+        <% if (typeof errMes !== 'undefined') {%>
+        <%= errMes%>
+        <% }%>
+    </p>
+    
+</body>
+</html>
